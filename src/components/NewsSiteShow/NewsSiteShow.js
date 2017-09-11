@@ -14,9 +14,10 @@ class NewsSiteShow extends Component {
     this.state = {
       selectedSite: {},
       apiSite: {},
-      articles: []
-    }
+      response: []
   }
+  this.setState = this.setState.bind(this)
+}
 
   componentWillMount(){
     let site = this.props.match.params.source
@@ -42,26 +43,26 @@ class NewsSiteShow extends Component {
       method: 'GET',
       dataType: 'json'
     }).then((response) => {
-      this.setState({ articles: response.articles.map((article) => {
-        article = {
-          author: article.author,
-          title: article.title,
-          description: article.description
-      }
-      })
+      console.log(Object.values(response))
+      this.setState({ response: response.articles })
     })
-      console.log(this.state.articles)
-})
-}
+  }
 
 render() {
+  console.log(this.state)
+  var articles = this.state.response.map((article, index) => {
+    return ( <div className="stuff">
+      by: {article.author},
+      title: {article.title},
+      description: {article.description}
+      </div>
+    )})
   return (
     <div>
+    {articles}
     </div>
   )
+
 }
-
-
-
 }
 export default NewsSiteShow;
