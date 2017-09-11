@@ -1,0 +1,14 @@
+.sources {
+    border: 5px solid black;
+    padding: 1%;
+    text-align: center;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 4% auto;
+}
