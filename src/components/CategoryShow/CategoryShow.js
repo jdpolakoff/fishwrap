@@ -20,7 +20,7 @@ class CategoryShow extends Component {
     console.log(filteredSources)
     let results = filteredSources.map((source, index) => {
     return (
-          <div className="sources" key={index}>{source.name}</div>
+          <div className="sources" key={index}><Link to={`/sources/${source.id}`}>{source.name}</Link></div>
         )
       })
     return (
