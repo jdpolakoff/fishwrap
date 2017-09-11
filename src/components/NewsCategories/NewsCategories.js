@@ -6,10 +6,9 @@ import {
   Redirect,
   Switch
 } from "react-router-dom"
-import './AllNews.css';
-import NewsCategories from '../NewsCategories/NewsCategories'
+import './NewsCategories.css';
 
-class AllNews extends Component {
+class NewsCategories extends Component {
   constructor() {
     super()
     this.state = {
@@ -52,20 +51,20 @@ class AllNews extends Component {
   }
 
   render() {
-    let allNews = this.props.allNews.map((source, index) => {
-    return (
-          <div className="sources" key={index}><Link to="">{source.name}</Link></div>
+    let newsCategories = this.state.newsCategories.map((category, index) => {
+      return (
+            <div className="categories" key={index}><Link to={`/${category.type}`}>{category.name}</Link></div>
         )
-      })
+        })
+
     return(
       <div>
-          <NewsCategories />
-          <div className="homeContainer">
-            { allNews }
-          </div>
+          <header className="headerContainer">
+            { newsCategories }
+          </header>
       </div>
       )
   }
 }
 
-export default AllNews;
+export default NewsCategories;

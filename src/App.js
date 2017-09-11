@@ -10,6 +10,8 @@ import './App.css';
 import MainNav from './components/mainNav/mainNav'
 import Search from './components/Search/Search'
 import AllNews from './components/AllNews/AllNews'
+import CategoryShow from './components/CategoryShow/CategoryShow'
+import NewsCategories from './components/NewsCategories/NewsCategories'
 
 class App extends Component {
   constructor() {
@@ -157,6 +159,23 @@ class App extends Component {
                         )
                       }}
                       />
+                    <Route
+                      path="/:category"
+                      render={(props) => {
+                        return (
+                          <div>
+                            <header>
+                            <h1>Headlines</h1>
+                            </header>
+                            <NewsCategories />
+                            <CategoryShow
+                              {...props}
+                              allNews={this.state.allNewsSources}
+                            />
+                          </div>
+                        )
+                    }}
+                  />
               <Redirect from="/*" to="/news"/>
               </Switch>
         </main>
