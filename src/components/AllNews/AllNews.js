@@ -17,11 +17,7 @@ class AllNews extends Component {
       [
         {
           type: "general",
-          name: "General News"
-        },
-        {
-          type: "politics",
-          name: "Politics"
+          name: "General News and Politics"
         },
         {
           type: "business",
