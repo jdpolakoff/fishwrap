@@ -5,18 +5,18 @@
     padding: 1%;
     text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 10%;
 }
+
 
 .homeContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 60%;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 4% auto;
 }
