@@ -29,6 +29,4 @@ class Search extends Component {
   }
 }
 
-// "http://beta.newsapi.org/v2/top-headlines?q=trump&apiKey=2046072022de4210a11c3a47994a1fb7"
-
 export default Search;

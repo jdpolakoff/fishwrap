@@ -1005,7 +1005,7 @@ class App extends Component {
                               <h1>Headlines</h1>
                             </header>
                               <NewsCategories />
-                              <SearchResults />
+                              <SearchResults {...props} />
                             </div>
                           )
                         }}
