@@ -15,6 +15,7 @@ import NewsCategories from './components/NewsCategories/NewsCategories'
 import NewsSiteShow from './components/NewsSiteShow/NewsSiteShow'
 import SearchResults from './components/SearchResults/SearchResults'
 import SearchContainer from './components/SearchContainer/SearchContainer'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   constructor() {
@@ -31,9 +32,8 @@ class App extends Component {
         "language": "en",
         "country": "au",
         "urlsToLogos": {
-        "small": "http://mobile.abc.net.au/cm/cb/4355924/News+iOS+120x120/data.png",
-        "medium": "",
-        "large": ""
+        "small":
+        "http://infofishaustralia.com.au/wp-content/uploads/2016/11/abc.png",
         },
         "sortBysAvailable": [
         "top"
@@ -66,7 +66,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/2215576731/ars-logo.png",
         "medium": "",
         "large": ""
         },
@@ -84,7 +84,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/461964160838803457/8z9FImcv_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -101,7 +101,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://www.nigerianbulletin.com/data/attachments/98/98832-d5a380f40a784c1d1be113942198a15a.jpg",
         "medium": "",
         "large": ""
         },
@@ -118,7 +118,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://s1.mzstatic.com/us/r30/Purple6/v4/0a/b2/f2/0ab2f289-f051-d633-3fad-f6c4f7cd6020/mzl.tlmlnmhz.png",
         "medium": "",
         "large": ""
         },
@@ -135,7 +135,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://www.bbhub.io/mobile/sites/2/2014/05/media_app_icon.png",
         "medium": "",
         "large": ""
         },
@@ -152,7 +152,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "http://media.thisisinsider.com/public/assets/BI/US/logos/logos-page/BI_blue_background_vertical.png",
         "medium": "",
         "large": ""
         },
@@ -170,7 +170,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://www.buzzfeed.com/static-assets/img/buzzfeed_arrow.e86a786d9e5e2250e1ed3e0ec95ba42d.png",
         "medium": "",
         "large": ""
         },
@@ -188,7 +188,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/CNBC_logo.svg/1000px-CNBC_logo.svg.png",
         "medium": "",
         "large": ""
         },
@@ -205,7 +205,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cnn_logo_red_background.png",
         "medium": "",
         "large": ""
         },
@@ -222,7 +222,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://www.lowyat.net/wp-content/uploads/2016/04/daily-mail-logo.png",
         "medium": "",
         "large": ""
         },
@@ -240,7 +240,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/655059892022022144/Pq3Q_1oU.png",
         "medium": "",
         "large": ""
         },
@@ -258,7 +258,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/881539688418471937/lf5NWhm__400x400.jpg",
         "medium": "",
         "large": ""
         },
@@ -275,7 +275,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/445215959293239296/57PQqOAe_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -292,7 +292,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/media/ClYz_1vUkAAenwG.png",
         "medium": "",
         "large": ""
         },
@@ -310,7 +310,7 @@ class App extends Component {
         "language": "en",
         "country": "it",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/698921091746631682/i2a-6xkb.png",
         "medium": "",
         "large": ""
         },
@@ -328,7 +328,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/875382047216467972/3119VjuE_400x400.jpg",
         "medium": "",
         "large": ""
         },
@@ -346,7 +346,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://www.fourfourtwo.com/sites/fourfourtwo.com/themes/fourfourtwo/images/logo-big.png",
         "medium": "",
         "large": ""
         },
@@ -364,7 +364,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/572924972104839168/QfSnx_Mu.png",
         "medium": "",
         "large": ""
         },
@@ -382,7 +382,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/644065708511358976/cLeFIFQH.png",
         "medium": "",
         "large": ""
         },
@@ -399,7 +399,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/469397708986269696/iUrYEOpJ_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -417,7 +417,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://i0.wp.com/internetpressservice.com/wp-content/uploads/2017/07/IGN-Entertainment-logo.png?fit=512%2C512",
         "medium": "",
         "large": ""
         },
@@ -435,7 +435,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/583628771972018176/ztJn926g.png",
         "medium": "",
         "large": ""
         },
@@ -452,7 +452,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/3690672785/16d3f33b98e664764b722cfaa79cefcf_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -470,25 +470,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
-        "medium": "",
-        "large": ""
-        },
-        "sortBysAvailable": [
-        "top",
-        "latest"
-        ]
-        },
-        {
-        "id": "mirror",
-        "name": "Mirror",
-        "description": "All the latest news, sport and celebrity gossip at Mirror.co.uk. Get all the big headlines, pictures, analysis, opinion and video on the stories that matter to you.",
-        "url": "http://www.mirror.co.uk/",
-        "category": "general",
-        "language": "en",
-        "country": "gb",
-        "urlsToLogos": {
-        "small": "",
+        "small": "https://s0.wp.com/wp-content/themes/vip/metrouk/img/branding/metro.co.uk/metro.co.uk-white-on-orange.png",
         "medium": "",
         "large": ""
         },
@@ -506,7 +488,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://imagesmtv-a.akamaihd.net/uri/mgid:file:http:shared:mtv.com/news/wp-content/uploads/2016/07/staff-author-250-1468362828.png?format=jpg&quality=.8",
         "medium": "",
         "large": ""
         },
@@ -524,7 +506,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/798181194202566656/U8QbCBdH.jpg",
         "medium": "",
         "large": ""
         },
@@ -541,7 +523,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/843789564074496001/m34mTHmg.jpg",
         "medium": "",
         "large": ""
         },
@@ -558,7 +540,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/741603495929905152/di0NxkFa_400x400.jpg",
         "medium": "",
         "large": ""
         },
@@ -576,7 +558,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "http://nymag.com/img/nymag-1500x1500.png",
         "medium": "",
         "large": ""
         },
@@ -594,7 +576,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/858754002384805888/wMBd6-dd.jpg",
         "medium": "",
         "large": ""
         },
@@ -612,7 +594,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://cdn1.vox-cdn.com/uploads/chorus_asset/file/8402075/941450_609208285758470_875871287_n.0.png",
         "medium": "",
         "large": ""
         },
@@ -629,7 +611,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/729365899828989952/o0AuZCNW.jpg",
         "medium": "",
         "large": ""
         },
@@ -646,7 +628,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/1550209998/r_logo_twitter_white.png",
         "medium": "",
         "large": ""
         },
@@ -664,7 +646,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/2372563142/2o6wf136l6d47jrscqq9_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -682,7 +664,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/879359733936701440/sitcq7wY.jpg",
         "medium": "",
         "large": ""
         },
@@ -700,7 +682,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/875421451653873664/P21KAcnr.jpg",
         "medium": "",
         "large": ""
         },
@@ -718,7 +700,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/879361767914262528/HdRauDM-.jpg",
         "medium": "",
         "large": ""
         },
@@ -736,7 +718,7 @@ class App extends Component {
         "language": "en",
         "country": "au",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/875549008407576576/wNTVvshs_400x400.jpg",
         "medium": "",
         "large": ""
         },
@@ -753,7 +735,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/877153924637175809/deHwf3Qu.jpg",
         "medium": "",
         "large": ""
         },
@@ -771,7 +753,7 @@ class App extends Component {
         "language": "en",
         "country": "in",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/627376030282416128/pYl_LmcW.jpg",
         "medium": "",
         "large": ""
         },
@@ -789,7 +771,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "http://www.underconsideration.com/brandnew/archives/huffpost_icon.png",
         "medium": "",
         "large": ""
         },
@@ -806,7 +788,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
         "medium": "",
         "large": ""
         },
@@ -823,7 +805,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/848832036169273344/p5J8QMn7.jpg",
         "medium": "",
         "large": ""
         },
@@ -840,7 +822,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/841984282956582917/XDA2iEh1.jpg",
         "medium": "",
         "large": ""
         },
@@ -858,7 +840,7 @@ class App extends Component {
         "language": "en",
         "country": "gb",
         "urlsToLogos": {
-        "small": "",
+        "small": "http://moosemaple.co.uk/wp-content/uploads/2016/09/The_Telegraph_logo.jpeg",
         "medium": "",
         "large": ""
         },
@@ -876,7 +858,7 @@ class App extends Component {
         "language": "en",
         "country": "in",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/781514680732749824/PG2_gebm.jpg",
         "medium": "",
         "large": ""
         },
@@ -894,7 +876,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/877903823133704194/Mqp1PXU8_400x400.jpg",
         "medium": "",
         "large": ""
         },
@@ -912,7 +894,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/685113343204585473/jV72Zljq.jpg",
         "medium": "",
         "large": ""
         },
@@ -929,7 +911,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/875440182501277696/n-Ic9nBO.jpg",
         "medium": "",
         "large": ""
         },
@@ -946,7 +928,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/1700796190/Picture_24_400x400.png",
         "medium": "",
         "large": ""
         },
@@ -964,7 +946,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/881124724776075264/HIaW0jIz.jpg",
         "medium": "",
         "large": ""
         },
@@ -992,6 +974,7 @@ class App extends Component {
                             <NewsCategories />
                             <SearchContainer {...props} />
                             <AllNews allNews={this.state.allNewsSources}/>
+                            <Footer />
                           </div>
                         )
                       }}
@@ -1006,6 +989,7 @@ class App extends Component {
                             </header>
                               <NewsCategories />
                               <SearchResults {...props} />
+                              <Footer />
                             </div>
                           )
                         }}
@@ -1019,6 +1003,7 @@ class App extends Component {
                           {...props}
                           allNews={this.state.allNewsSources}
                           />
+                          <Footer />
                           </div>
                         )
                       }}
@@ -1036,6 +1021,7 @@ class App extends Component {
                               {...props}
                               allNews={this.state.allNewsSources}
                             />
+                          <Footer />
                           </div>
                         )
                     }}

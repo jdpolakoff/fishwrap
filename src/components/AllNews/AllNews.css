@@ -5,6 +5,12 @@
     min-width: 100px;
 }
 
+.sources img {
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 2%
+}
+
 .homeContainer, .headerContainer {
   display: flex;
   flex-direction: row;
