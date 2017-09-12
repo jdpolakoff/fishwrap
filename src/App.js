@@ -974,7 +974,6 @@ class App extends Component {
                             <NewsCategories />
                             <SearchContainer {...props} />
                             <AllNews allNews={this.state.allNewsSources}/>
-                            <Footer />
                           </div>
                         )
                       }}
@@ -989,7 +988,6 @@ class App extends Component {
                             </header>
                               <NewsCategories />
                               <SearchResults {...props} />
-                              <Footer />
                             </div>
                           )
                         }}
@@ -1003,7 +1001,6 @@ class App extends Component {
                           {...props}
                           allNews={this.state.allNewsSources}
                           />
-                          <Footer />
                           </div>
                         )
                       }}
@@ -1014,14 +1011,12 @@ class App extends Component {
                         return (
                           <div>
                             <header>
-                            <h1>Headlines</h1>
+                              <h1>Headlines</h1>
                             </header>
-                            <NewsCategories />
                             <CategoryShow
                               {...props}
                               allNews={this.state.allNewsSources}
                             />
-                          <Footer />
                           </div>
                         )
                     }}
@@ -1029,6 +1024,7 @@ class App extends Component {
               <Redirect from="/*" to="/news"/>
               </Switch>
         </main>
+        <Footer />
       </div>
       </Router>
     );

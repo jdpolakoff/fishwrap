@@ -45,7 +45,7 @@ class NewsCategories extends Component {
   render() {
     let newsCategories = this.state.newsCategories.map((category, index) => {
       return (
-            <div className="categories" key={index}><Link to={`/${category.type}`}>{category.name}</Link></div>
+            <Link to={`/${category.type}`}><div className="categories" key={index}>{category.name}</div></Link>
         )
         })
 

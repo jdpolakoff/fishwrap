@@ -1,20 +1,22 @@
 .sources {
-    border: 5px solid black;
+    box-shadow: 5px 5px 5px #D6DBDF;
+    border-radius: 10px;
+    border: 2px solid #D6DBDF;
     padding: 1%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.homeContainer, .headerContainer {
+.homeContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
+  width: 60%;
+  justify-content: space-between;
   margin: 4% auto;
-}
-
-.categories {
-  border: 5px solid blue;
-  padding: .2%;
-  text-align: center;
 }
