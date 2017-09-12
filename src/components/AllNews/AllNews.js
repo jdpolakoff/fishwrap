@@ -8,6 +8,8 @@ import {
 } from "react-router-dom"
 import './AllNews.css';
 import NewsCategories from '../NewsCategories/NewsCategories'
+import Search from '../Search/Search'
+import SearchContainer from '../SearchContainer/SearchContainer'
 
 class AllNews extends Component {
   constructor() {
@@ -55,7 +57,6 @@ class AllNews extends Component {
       })
     return(
       <div>
-          <NewsCategories />
           <div className="homeContainer">
             { allNews }
           </div>

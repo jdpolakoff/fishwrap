@@ -51,10 +51,13 @@ class NewsSiteShow extends Component {
 render() {
   console.log(this.state)
   var articles = this.state.response.map((article, index) => {
+    console.log(article)
     return ( <div key={index} className="stuff">
+      <img src={article.urlToImage} />
       <h4>{article.title.toUpperCase()}</h4>
       <p><i>{article.author}</i></p>
       <p>{article.description}</p>
+      <p>{article.publishedAt}</p>
       </div>
     )})
   return (

@@ -13,6 +13,8 @@ import AllNews from './components/AllNews/AllNews'
 import CategoryShow from './components/CategoryShow/CategoryShow'
 import NewsCategories from './components/NewsCategories/NewsCategories'
 import NewsSiteShow from './components/NewsSiteShow/NewsSiteShow'
+import SearchResults from './components/SearchResults/SearchResults'
+import SearchContainer from './components/SearchContainer/SearchContainer'
 
 class App extends Component {
   constructor() {
@@ -981,18 +983,33 @@ class App extends Component {
               <Switch>
                     <Route
                       path="/news"
-                      render={() => {
+                      render={(props) => {
                         return (
                           <div>
                           <header>
-                          <h1>Headlines</h1>
+                            <h1>Headlines</h1>
                           </header>
+                            <NewsCategories />
+                            <SearchContainer {...props} />
                             <AllNews allNews={this.state.allNewsSources}/>
-                            <Search />
                           </div>
                         )
                       }}
                       />
+                      <Route
+                        path="/search/:query"
+                        render={(props) => {
+                          return (
+                            <div>
+                            <header>
+                              <h1>Headlines</h1>
+                            </header>
+                              <NewsCategories />
+                              <SearchResults />
+                            </div>
+                          )
+                        }}
+                        />
                       <Route
                       path="/sources/:source"
                       render={(props) => {

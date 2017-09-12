@@ -4,3 +4,7 @@
   text-align: center;
   border: 1px solid black
 }
+
+.stuff img {
+  width: 100%;
+}
