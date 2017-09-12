@@ -50,7 +50,7 @@ class AllNews extends Component {
   render() {
     let allNews = this.props.allNews.map((source, index) => {
     return (
-          <div className="sources" key={index}><Link to={`/sources/${source.id}`}>{source.name}</Link></div>
+          <Link to={`/sources/${source.id}`}><div className="sources" key={index}><img src="{source.urlsToLogos.small}" />{source.name}</div></Link>
         )
       })
     return(

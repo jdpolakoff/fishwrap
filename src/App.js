@@ -29,7 +29,7 @@ class App extends Component {
         "language": "en",
         "country": "au",
         "urlsToLogos": {
-        "small": "",
+        "small": "http://mobile.abc.net.au/cm/cb/4355924/News+iOS+120x120/data.png",
         "medium": "",
         "large": ""
         },
@@ -46,7 +46,7 @@ class App extends Component {
         "language": "en",
         "country": "us",
         "urlsToLogos": {
-        "small": "",
+        "small": "https://pbs.twimg.com/profile_images/463358340286779393/4Kv4e12V.jpeg",
         "medium": "",
         "large": ""
         },
@@ -160,29 +160,11 @@ class App extends Component {
         ]
         },
         {
-        "id": "business-insider-uk",
-        "name": "Business Insider (UK)",
-        "description": "Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.",
-        "url": "http://uk.businessinsider.com",
-        "category": "business",
-        "language": "en",
-        "country": "gb",
-        "urlsToLogos": {
-        "small": "",
-        "medium": "",
-        "large": ""
-        },
-        "sortBysAvailable": [
-        "top",
-        "latest"
-        ]
-        },
-        {
         "id": "buzzfeed",
         "name": "Buzzfeed",
         "description": "BuzzFeed is a cross-platform, global network for news and entertainment that generates seven billion views each month.",
         "url": "https://www.buzzfeed.com",
-        "category": "entertainment",
+        "category": "general",
         "language": "en",
         "country": "us",
         "urlsToLogos": {
@@ -297,24 +279,6 @@ class App extends Component {
         },
         "sortBysAvailable": [
         "top"
-        ]
-        },
-        {
-        "id": "espn-cric-info",
-        "name": "ESPN Cric Info",
-        "description": "ESPN Cricinfo provides the most comprehensive cricket coverage available including live ball-by-ball commentary, news, unparalleled statistics, quality editorial comment and analysis.",
-        "url": "http://www.espncricinfo.com/",
-        "category": "sport",
-        "language": "en",
-        "country": "us",
-        "urlsToLogos": {
-        "small": "",
-        "medium": "",
-        "large": ""
-        },
-        "sortBysAvailable": [
-        "top",
-        "latest"
         ]
         },
         {
@@ -482,7 +446,7 @@ class App extends Component {
         "name": "Mashable",
         "description": "Mashable is a global, multi-platform media and entertainment company.",
         "url": "http://mashable.com",
-        "category": "entertainment",
+        "category": "technology",
         "language": "en",
         "country": "us",
         "urlsToLogos": {
@@ -536,7 +500,7 @@ class App extends Component {
         "name": "MTV News",
         "description": "The ultimate news source for music, celebrity, entertainment, movies, and current events on the web. It's pop culture on steroids.",
         "url": "http://www.mtv.com/news",
-        "category": "music",
+        "category": "entertainment",
         "language": "en",
         "country": "us",
         "urlsToLogos": {
@@ -547,23 +511,6 @@ class App extends Component {
         "sortBysAvailable": [
         "top",
         "latest"
-        ]
-        },
-        {
-        "id": "mtv-news-uk",
-        "name": "MTV News (UK)",
-        "description": "All the latest celebrity news, gossip, exclusive interviews and pictures from the world of music and entertainment.",
-        "url": "http://www.mtv.co.uk/news",
-        "category": "music",
-        "language": "en",
-        "country": "gb",
-        "urlsToLogos": {
-        "small": "",
-        "medium": "",
-        "large": ""
-        },
-        "sortBysAvailable": [
-        "top"
         ]
         },
         {
@@ -849,24 +796,6 @@ class App extends Component {
         ]
         },
         {
-        "id": "the-lad-bible",
-        "name": "The Lad Bible",
-        "description": "The LAD Bible is one of the largest community for guys aged 16-30 in the world. Send us your funniest pictures and videos!",
-        "url": "http://www.theladbible.com",
-        "category": "entertainment",
-        "language": "en",
-        "country": "gb",
-        "urlsToLogos": {
-        "small": "",
-        "medium": "",
-        "large": ""
-        },
-        "sortBysAvailable": [
-        "top",
-        "latest"
-        ]
-        },
-        {
         "id": "the-new-york-times",
         "name": "The New York Times",
         "description": "The New York Times: Find breaking news, multimedia, reviews & opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars & more at nytimes.com.",
@@ -1069,9 +998,6 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
-                          <header>
-                          <h1>Headlines</h1>
-                          </header>
                           <NewsSiteShow
                           {...props}
                           allNews={this.state.allNewsSources}

@@ -51,15 +51,20 @@ class NewsSiteShow extends Component {
 render() {
   console.log(this.state)
   var articles = this.state.response.map((article, index) => {
-    return ( <div className="stuff">
-      by: {article.author},
-      title: {article.title},
-      description: {article.description}
+    return ( <div key={index} className="stuff">
+      <h4>{article.title.toUpperCase()}</h4>
+      <p><i>{article.author}</i></p>
+      <p>{article.description}</p>
       </div>
     )})
   return (
     <div>
-    {articles}
+      <header>
+        <h2>Top Headlines From {this.state.selectedSite.name}</h2>
+      </header>
+    <div>
+      {articles}
+    </div>
     </div>
   )
 

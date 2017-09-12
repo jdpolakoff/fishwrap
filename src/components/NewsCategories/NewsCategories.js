@@ -38,10 +38,6 @@ class NewsCategories extends Component {
           type: "entertainment",
           name: "Entertainment"
         },
-        {
-          type: "music",
-          name: "Music"
-        },
       ]
     }
   }
