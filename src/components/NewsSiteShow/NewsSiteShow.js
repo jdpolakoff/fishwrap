@@ -7,6 +7,8 @@ import {
 } from "react-router-dom"
 import './NewsSiteShow.css';
 import $ from 'jquery'
+import ReactSiema from 'react-siema'
+
 
 class NewsSiteShow extends Component {
   constructor() {
@@ -49,29 +51,30 @@ class NewsSiteShow extends Component {
   }
 
 render() {
-  console.log(this.state)
-  var articles = this.state.response.map((article, index) => {
-    console.log(article)
-    return ( <div key={index} className="stuff">
-      <img src={article.urlToImage} />
-      <h4>{article.title.toUpperCase()}</h4>
-      <p><i>{article.author}</i></p>
-      <p>{article.description}</p>
-      <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
-      <p>{article.publishedAt}</p>
-      </div>
-    )})
-  return (
-    <div>
+  return(
+    <div className="stuffContain">
       <header>
         <h2>Top Headlines From {this.state.selectedSite.name}</h2>
+        <button onClick={() => this.siema.prev()}>Previous story</button>
+        <button onClick={() => this.siema.next()}>Next story</button>
       </header>
-    <div>
-      {articles}
-    </div>
-    </div>
-  )
+    <ReactSiema ref={(siema) => this.siema = siema}>
+        {this.state.response.map((article, index) => {
+      return (
+        <div key={index} className="stuff">
+        <img src={article.urlToImage} />
+        <h4>{article.title.toUpperCase()}</h4>
+        <p><i>{article.author}</i></p>
+        <p>{article.description}</p>
+        <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
+        <p>{article.publishedAt}</p>
+        </div>
+        )}
+      )}
+    </ReactSiema>
+  </div>
+    )
+  }
+}
 
-}
-}
 export default NewsSiteShow;

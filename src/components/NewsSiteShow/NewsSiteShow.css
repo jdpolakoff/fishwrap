@@ -1,11 +1,19 @@
 .stuff {
-  margin: 5% auto;
+  margin: 0 auto;
   width: 40%;
   text-align: center;
-  border: 1px solid black
+  border: 1px solid black;
+  margin-bottom: none;
 }
 
 .stuff img {
-  width: 100%;
+  width: 80%;
   /*height: 250px;*/
+}
+
+button {
+  margin-bottom: 2%;
+  width: 15%;
+  height: 15%;
+  font-size: 20px;
 }
