@@ -1,19 +1,25 @@
+
+
+
+.stuff button {
+  margin-bottom: 2%;
+  min-width: 50px;
+  min-height: 100px;
+  font-size: 20px;
+}
+
 .stuff {
   margin: 0 auto;
   width: 40%;
   text-align: center;
   border: 1px solid black;
   margin-bottom: none;
+  padding: 2%;
 }
+
 
 .stuff img {
   width: 80%;
-  /*height: 250px;*/
-}
-
-button {
-  margin-bottom: 2%;
-  width: 15%;
-  height: 15%;
-  font-size: 20px;
+  padding: 2%;
+  border: 1px solid black;
 }

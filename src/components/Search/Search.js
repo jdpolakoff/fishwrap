@@ -20,7 +20,7 @@ class Search extends Component {
   render() {
     return (
       <div className="searchForm">
-        <h3>Search real-time headlines from outlets including The New York Times, Washington Post and dozens more:</h3>
+        <h3>Or, search real-time headlines from outlets including The New York Times, Washington Post and dozens more:</h3>
         <form onSubmit={this.props.onSubmitQuery}>
             <input type="text" onChange={this.props.handleSearchInput} />
             <br />

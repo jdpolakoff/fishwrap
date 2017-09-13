@@ -16,6 +16,7 @@ import NewsSiteShow from './components/NewsSiteShow/NewsSiteShow'
 import SearchResults from './components/SearchResults/SearchResults'
 import SearchContainer from './components/SearchContainer/SearchContainer'
 import Footer from './components/Footer/Footer'
+import MainTopics from './components/MainTopics/MainTopics'
 
 class App extends Component {
   constructor() {
@@ -32,8 +33,7 @@ class App extends Component {
         "language": "en",
         "country": "au",
         "urlsToLogos": {
-        "small":
-        "http://infofishaustralia.com.au/wp-content/uploads/2016/11/abc.png",
+        "small": "https://pbs.twimg.com/profile_images/378800000835394812/ec9b283d47427e851a2cb30ebd29d1df_400x400.jpeg"
         },
         "sortBysAvailable": [
         "top"
@@ -972,6 +972,7 @@ class App extends Component {
                             <h1>Headlines</h1>
                           </header>
                             <NewsCategories />
+                            <MainTopics />
                             <SearchContainer {...props} />
                             <AllNews allNews={this.state.allNewsSources}/>
                           </div>

@@ -9,6 +9,7 @@ import {
 import './SearchResults.css';
 import $ from 'jquery'
 import SearchContainer from '../SearchContainer/SearchContainer'
+import ReactSiema from 'react-siema'
 
 
 class SearchResults extends Component {
@@ -40,28 +41,34 @@ componentDidMount(){
 }
 
 render() {
-  var articles = this.state.response.map((article, index) => {
-    console.log(article)
-    return ( <div key={index} className="stuff">
-      <img src={article.urlToImage} />
-      <h4>{article.title.toUpperCase()}</h4>
-      <p>{article.source.name}</p>
-      <p><i>{article.author}</i></p>
-      <p>{article.description}</p>
-      <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
-      <p>{article.publishedAt}</p>
-      </div>
-    )})
-  return (
-    <div>
-      <header><h2>Top Headlines About {this.props.match.params.query}</h2></header>
-    <div>
-      {articles}
-    </div>
-    </div>
-  )
-
-}
+  return(
+    <div className="stuff2Contain">
+      <header>
+        <h2>Top Headlines About {this.props.match.params.query}</h2>
+      </header>
+    <ReactSiema ref={(siema) => this.siema = siema}>
+        {this.state.response.map((article, index) => {
+          console.log(article)
+      return (
+        <div>
+          <div key={index} className="stuff2">
+            <img src={article.urlToImage} />
+            <h1>{article.title.toUpperCase()}</h1>
+            <h2>{article.source.name}</h2>
+            <p><i>{article.author}</i></p>
+            <p>{article.description}</p>
+            <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
+            <p>{article.publishedAt}</p>
+            <button onClick={() => this.siema.prev()}>Previous story</button>
+            <button onClick={() => this.siema.next()}>Next story</button>
+          </div>
+        </div>
+        )}
+      )}
+    </ReactSiema>
+  </div>
+    )
+  }
 }
 
 export default SearchResults;

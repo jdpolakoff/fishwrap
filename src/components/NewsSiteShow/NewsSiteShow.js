@@ -55,12 +55,11 @@ render() {
     <div className="stuffContain">
       <header>
         <h2>Top Headlines From {this.state.selectedSite.name}</h2>
-        <button onClick={() => this.siema.prev()}>Previous story</button>
-        <button onClick={() => this.siema.next()}>Next story</button>
       </header>
     <ReactSiema ref={(siema) => this.siema = siema}>
         {this.state.response.map((article, index) => {
       return (
+      <div>
         <div key={index} className="stuff">
         <img src={article.urlToImage} />
         <h4>{article.title.toUpperCase()}</h4>
@@ -68,7 +67,10 @@ render() {
         <p>{article.description}</p>
         <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
         <p>{article.publishedAt}</p>
+        <button onClick={() => this.siema.prev()}>Previous story</button>
+        <button onClick={() => this.siema.next()}>Next story</button>
         </div>
+      </div>
         )}
       )}
     </ReactSiema>
