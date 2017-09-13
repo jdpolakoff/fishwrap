@@ -979,19 +979,19 @@ class App extends Component {
                       }}
                       />
                       <Route
-                        path="/search/:query"
-                        render={(props) => {
-                          return (
-                            <div>
-                            <header>
-                              <h1>Headlines</h1>
-                            </header>
-                              <NewsCategories />
-                              <SearchResults {...props} />
-                            </div>
-                          )
-                        }}
-                        />
+                      path="/search/:query"
+                      render={(props) => {
+                        return (
+                          <div>
+                          <header>
+                          <h1>Headlines</h1>
+                          </header>
+                          <NewsCategories />
+                          <SearchResults {...props} />
+                          </div>
+                        )
+                      }}
+                      />
                       <Route
                       path="/sources/:source"
                       render={(props) => {

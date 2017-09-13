@@ -54,14 +54,17 @@ class AllNews extends Component {
     return (
           <Link to={`/sources/${source.id}`}>
           <div className="sources" key={index}>
-          <img src={`${source.urlsToLogos.small}`} /><br />
-          {source.name}
+            <div className="innerSources">
+              <img src={`${source.urlsToLogos.small}`} /><br />
+              {source.name}
+            </div>
           </div>
           </Link>
         )
       })
     return(
-      <div>
+      <div className="bigContain">
+      <h3>Or browse real-time headlines from any of these sources:</h3>
           <div className="homeContainer">
             { allNews }
           </div>

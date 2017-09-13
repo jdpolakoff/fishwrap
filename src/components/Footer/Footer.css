@@ -1,5 +1,11 @@
 .footerContainer {
+  border: 1px solid black;
   margin-bottom: 0;
   height: 5%;
-  background-color: grey
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }

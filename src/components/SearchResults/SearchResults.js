@@ -21,6 +21,7 @@ constructor(){
 }
 
 componentDidMount(){
+  console.log(this.props)
   const domain = "http://beta.newsapi.org/v2/"
   let query = this.props.match.params.query
   const endpoint = `top-headlines?q=${query}`
@@ -53,9 +54,7 @@ render() {
     )})
   return (
     <div>
-      <header>
-        <h2>Top Headlines About "{this.props.match.params.query}"</h2>
-      </header>
+      <header><h2>Top Headlines About {this.props.match.params.query}</h2></header>
     <div>
       {articles}
     </div>
@@ -64,7 +63,5 @@ render() {
 
 }
 }
-
-// "http://beta.newsapi.org/v2/top-headlines?q=trump&apiKey=2046072022de4210a11c3a47994a1fb7"
 
 export default SearchResults;

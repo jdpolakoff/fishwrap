@@ -15,7 +15,7 @@ class Footer extends Component {
       <div>
           <footer className="footerContainer">
             <nav>
-              <p>Home</p>
+              <Link to="/news"><p>Home</p></Link>
             </nav>
           </footer>
       </div>

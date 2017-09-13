@@ -20,9 +20,11 @@ class Search extends Component {
   render() {
     return (
       <div className="searchForm">
+        <h3>Search real-time headlines from outlets including The New York Times, Washington Post and dozens more:</h3>
         <form onSubmit={this.props.onSubmitQuery}>
-          <input type="text" placeholder="search" onChange={this.props.handleSearchInput} />
-          <button type="submit">Search</button>
+            <input type="text" onChange={this.props.handleSearchInput} />
+            <br />
+            <button type="submit">Search</button>
         </form>
       </div>
     )
