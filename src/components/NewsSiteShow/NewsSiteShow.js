@@ -57,6 +57,7 @@ render() {
       <h4>{article.title.toUpperCase()}</h4>
       <p><i>{article.author}</i></p>
       <p>{article.description}</p>
+      <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
       <p>{article.publishedAt}</p>
       </div>
     )})
