@@ -64,7 +64,7 @@ class AllNews extends Component {
       })
     return(
       <div className="bigContain">
-      <h3>Or browse real-time headlines from any of these sources:</h3>
+      <h3>Or, browse real-time headlines from any of these sources:</h3>
           <div className="homeContainer">
             { allNews }
           </div>

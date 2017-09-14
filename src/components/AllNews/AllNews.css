@@ -19,10 +19,7 @@
 
 .bigContain h3 {
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: none;
-  margin-bottom: -3%;
+  margin: 0 auto
 }
 
 .homeContainer {
