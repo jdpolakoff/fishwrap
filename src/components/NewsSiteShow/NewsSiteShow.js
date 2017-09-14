@@ -35,7 +35,7 @@ class NewsSiteShow extends Component {
   }
 
   componentDidMount(){
-    const domain = "http://beta.newsapi.org/v2/"
+    const domain = "https://beta.newsapi.org/v2/"
     let current = this.state.selectedSite.id
     const endpoint = `top-headlines?sources=${current}`
     const apiKey = `&apiKey=2046072022de4210a11c3a47994a1fb7`
