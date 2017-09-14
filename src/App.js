@@ -17,6 +17,8 @@ import SearchResults from './components/SearchResults/SearchResults'
 import SearchContainer from './components/SearchContainer/SearchContainer'
 import Footer from './components/Footer/Footer'
 import MainTopics from './components/MainTopics/MainTopics'
+import About from './components/About/About'
+import Logo from './logo.png'
 
 class App extends Component {
   constructor() {
@@ -954,9 +956,27 @@ class App extends Component {
         "top",
         "latest"
         ]
-    }
-  ]
-}}
+        },
+        {
+        "id": "vice-news",
+        "name": "Vice News",
+        "description": "News, analysis and opinion from Vice.com.",
+        "url": "https://news.vice.com/",
+        "category": "general",
+        "language": "en",
+        "country": "us",
+        "urlsToLogos": {
+        "small": "https://pbs.twimg.com/profile_images/785208513177985024/Guc3ohmz_400x400.jpg",
+        "medium": "",
+        "large": ""
+        },
+        "sortBysAvailable": [
+        "top",
+        "latest"
+          ]
+        }
+      ]
+    }}
   render() {
     return (
       <Router>
@@ -969,7 +989,10 @@ class App extends Component {
                         return (
                           <div>
                           <header>
-                            <h1>Headlines</h1>
+                            <div className="headlogo">
+                              <h1>Fishwrap</h1>
+                              <img className="logo" src={Logo} />
+                            </div>
                           </header>
                             <NewsCategories />
                             <MainTopics />
@@ -985,7 +1008,7 @@ class App extends Component {
                         return (
                           <div>
                           <header>
-                          <h1>Headlines</h1>
+                          <h1>Fishwrap</h1>
                           </header>
                           <NewsCategories />
                           <SearchResults {...props} />
@@ -1006,13 +1029,23 @@ class App extends Component {
                         )
                       }}
                       />
+                      <Route
+                      path="/about"
+                      render={() => {
+                        return (
+                          <div>
+                            <About />
+                          </div>
+                        )
+                      }}
+                      />
                     <Route
                       path="/:category"
                       render={(props) => {
                         return (
                           <div>
                             <header>
-                              <h1>Headlines</h1>
+                              <h1>Fishwrap</h1>
                             </header>
                             <CategoryShow
                               {...props}

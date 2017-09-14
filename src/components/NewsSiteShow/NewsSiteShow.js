@@ -8,6 +8,8 @@ import {
 import './NewsSiteShow.css';
 import $ from 'jquery'
 import ReactSiema from 'react-siema'
+import moment from 'moment'
+import 'moment-timezone'
 
 
 class NewsSiteShow extends Component {
@@ -66,7 +68,7 @@ render() {
         <p><i>{article.author}</i></p>
         <p>{article.description}</p>
         <a href={article.url} target="_blank"><p><i>Full story</i></p></a>
-        <p>{article.publishedAt}</p>
+        <p>Published {moment(article.publishedAt).tz('America/New_York').format('MMMM Do YYYY, h:mm:ss z')}</p>
         <button onClick={() => this.siema.prev()}>Previous story</button>
         <button onClick={() => this.siema.next()}>Next story</button>
         </div>

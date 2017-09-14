@@ -2,15 +2,14 @@
 
 
 .stuff button {
-  margin-bottom: 2%;
-  min-width: 50px;
-  min-height: 100px;
+  min-width: 100px;
+  height: 60px;
   font-size: 20px;
 }
 
 .stuff {
   margin: 0 auto;
-  width: 40%;
+  width: 60%;
   text-align: center;
   border: 1px solid black;
   margin-bottom: none;
@@ -22,4 +21,10 @@
   width: 80%;
   padding: 2%;
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+  .stuff {
+    width: 80%
+  }
 }

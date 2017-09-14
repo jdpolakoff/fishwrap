@@ -1,0 +1,17 @@
+.aboutimg img {
+  width: 800px;
+  padding: 2%;
+  border: 1px solid black;
+}
+
+div p {
+  width: 80%;
+  text-align: center;
+  margin: 3% auto
+}
+
+@media only screen and (max-width: 600px) {
+  div img {
+    width: 500px;
+  }
+}

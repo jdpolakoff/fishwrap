@@ -14,9 +14,15 @@ class Footer extends Component {
     return(
       <div>
           <footer className="footerContainer">
-            <nav>
-              <Link to="/news"><p>Home</p></Link>
-            </nav>
+              <div>
+              <Link to="/news"><p> Home </p></Link>
+              </div>
+              <div>
+              <Link to="/about"><p> About </p></Link>
+              </div>
+              <div>
+              <Link to="https://newsapi.org/" target="_blank"><p> Powered by News API </p></Link>
+              </div>
           </footer>
       </div>
       )
