@@ -45,7 +45,8 @@ class NewsSiteShow extends Component {
     $.ajax({
       url,
       method: 'GET',
-      dataType: 'json'
+      dataType: 'json',
+      crossDomain: true
     }).then((response) => {
       console.log(Object.values(response))
       this.setState({ response: response.articles })
