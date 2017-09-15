@@ -43,7 +43,6 @@ class NewsSiteShow extends Component {
     let url = `${domain}${endpoint}${apiKey}`
     console.log(url)
     $.ajax({
-      crossOrigin: true,
       url,
       method: 'GET',
       dataType: 'json'

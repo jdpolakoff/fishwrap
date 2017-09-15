@@ -1,13 +1,14 @@
 .searchForm {
   margin: 0 auto;
   vertical-align: middle;
-  width: 60%;
+  width: 100%;
 }
 
 input {
   width: 280px;
   height: 30px;
   font-size: 20px;
+  margin: 0 auto;
   margin-bottom: 2%;
   text-align: center;
   border: 2px solid black;
