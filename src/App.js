@@ -1007,9 +1007,10 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
-                          <header>
-                          <h1>Fishwrap</h1>
-                          </header>
+                          <div className="headlogo">
+                            <h1>Fishwrap</h1>
+                            <img className="logo" src={Logo} />
+                          </div>
                           <NewsCategories />
                           <SearchResults {...props} />
                           </div>
@@ -1044,9 +1045,10 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
-                            <header>
-                              <h1>Fishwrap</h1>
-                            </header>
+                          <div className="headlogo">
+                            <h1>Fishwrap</h1>
+                            <img className="logo" src={Logo} />
+                          </div>
                             <CategoryShow
                               {...props}
                               allNews={this.state.allNewsSources}
