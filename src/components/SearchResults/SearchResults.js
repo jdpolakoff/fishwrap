@@ -12,6 +12,8 @@ import SearchContainer from '../SearchContainer/SearchContainer'
 import ReactSiema from 'react-siema'
 import moment from 'moment'
 import 'moment-timezone'
+import '../Footer/Footer.css';
+
 
 class SearchResults extends Component {
 
@@ -47,6 +49,7 @@ componentDidMount(){
 render() {
   return(
     <div className="stuff2Contain">
+    <main>
       <header>
         <h2>Top Headlines About <h2>{this.props.match.params.query}</h2></h2>
       </header>
@@ -70,6 +73,17 @@ render() {
                 )}
               )}
         </ReactSiema>
+        </main>
+        <div>
+            <footer className="footerContainer">
+                <div>
+                <Link to="/about"><p> About </p></Link>
+                </div>
+                <div>
+                <Link to="https://newsapi.org/" target="_blank"><p> Powered by News API </p></Link>
+                </div>
+            </footer>
+        </div>
       </div>
         )
       }

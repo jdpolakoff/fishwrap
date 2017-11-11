@@ -7,6 +7,10 @@
   padding: 2%;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
 .stuff2 img {
   width: 80%;
   padding: 2%;

@@ -19,6 +19,8 @@ import Footer from './components/Footer/Footer'
 import MainTopics from './components/MainTopics/MainTopics'
 import About from './components/About/About'
 import Logo from './logo.png'
+import './components/Footer/Footer.css';
+
 
 class App extends Component {
   constructor() {
@@ -987,17 +989,31 @@ class App extends Component {
                       path="/news"
                       render={(props) => {
                         return (
-                          <div>
-                          <header>
+                          <div className="content">
+                            <header>
+                            <Link to="/news">
                             <div className="headlogo">
                               <h1>Fishwrap</h1>
                               <img className="logo" src={Logo} />
                             </div>
+                            </Link>
                           </header>
+                          <main>
                             <NewsCategories />
                             <MainTopics />
                             <SearchContainer {...props} />
                             <AllNews allNews={this.state.allNewsSources}/>
+                            </main>
+                            <div>
+                                <footer className="footerContainer">
+                                    <div>
+                                    <Link to="/about"><p> About </p></Link>
+                                    </div>
+                                    <div>
+                                    <Link to="https://newsapi.org/" target="_blank"><p> Powered by News API </p></Link>
+                                    </div>
+                                </footer>
+                            </div>
                           </div>
                         )
                       }}
@@ -1007,10 +1023,12 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
+                          <Link to ="/news">
                           <div className="headlogo">
-                            <h1>Fishwrap</h1>
+                            <h1> ←Back </h1>
                             <img className="logo" src={Logo} />
                           </div>
+                          </Link>
                           <NewsCategories />
                           <SearchResults {...props} />
                           </div>
@@ -1022,6 +1040,12 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
+                          <Link to ="/news">
+                          <div className="headlogo">
+                            <h1> ←Back </h1>
+                            <img className="logo" src={Logo} />
+                          </div>
+                          </Link>
                           <NewsSiteShow
                           {...props}
                           allNews={this.state.allNewsSources}
@@ -1045,10 +1069,12 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
+                          <Link to ="/news">
                           <div className="headlogo">
-                            <h1>Fishwrap</h1>
+                            <h1> ←Back </h1>
                             <img className="logo" src={Logo} />
                           </div>
+                          </Link>
                             <CategoryShow
                               {...props}
                               allNews={this.state.allNewsSources}
@@ -1060,7 +1086,6 @@ class App extends Component {
               <Redirect from="/*" to="/news"/>
               </Switch>
         </main>
-        <Footer />
       </div>
       </Router>
     );

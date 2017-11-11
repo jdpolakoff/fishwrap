@@ -8,6 +8,8 @@ import {
 } from "react-router-dom"
 import './CategoryShow.css';
 import NewsCategories from '../NewsCategories/NewsCategories'
+import '../Footer/Footer.css';
+
 
 class CategoryShow extends Component {
   constructor() {
@@ -32,15 +34,27 @@ class CategoryShow extends Component {
         )
       })
     return (
+      <div className="content">
+      <main>
+        <div className="topNav">
+          <NewsCategories />
+        </div>
+        <header>
+          <h2>Your top {this.props.match.params.category} news sources:</h2>
+        </header>
+        <div className="homeContainer">
+          { results }
+        </div>
+      </main>
       <div>
-      <div className="topNav">
-        <NewsCategories />
-      </div>
-      <header>
-        <h2>Your top {this.props.match.params.category} news sources:</h2>
-      </header>
-      <div className="homeContainer">
-        { results }
+          <footer className="footerContainer">
+              <div>
+              <Link to="/about"><p> About </p></Link>
+              </div>
+              <div>
+              <Link to="https://newsapi.org/" target="_blank"><p> Powered by News API </p></Link>
+              </div>
+          </footer>
       </div>
       </div>
         )

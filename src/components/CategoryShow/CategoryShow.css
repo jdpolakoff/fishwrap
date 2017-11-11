@@ -11,6 +11,15 @@
     margin: 10%;
 }
 
+main {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 .homeContainer {
   display: flex;
