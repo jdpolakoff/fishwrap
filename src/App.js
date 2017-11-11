@@ -1025,7 +1025,7 @@ class App extends Component {
                           <div>
                           <Link to ="/news">
                           <div className="headlogo">
-                            <h1> ←Back </h1>
+                            <h2> ←Back </h2>
                             <img className="logo" src={Logo} />
                           </div>
                           </Link>
@@ -1042,7 +1042,7 @@ class App extends Component {
                           <div>
                           <Link to ="/news">
                           <div className="headlogo">
-                            <h1> ←Back </h1>
+                            <h2> ←Back </h2>
                             <img className="logo" src={Logo} />
                           </div>
                           </Link>
@@ -1071,7 +1071,7 @@ class App extends Component {
                           <div>
                           <Link to ="/news">
                           <div className="headlogo">
-                            <h1> ←Back </h1>
+                            <h2> ←Back </h2>
                             <img className="logo" src={Logo} />
                           </div>
                           </Link>

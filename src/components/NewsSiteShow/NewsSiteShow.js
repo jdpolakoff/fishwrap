@@ -82,9 +82,6 @@ render() {
     <div>
         <footer className="footerContainer">
             <div>
-            <Link to="/about"><p> About </p></Link>
-            </div>
-            <div>
             <Link to="https://newsapi.org/" target="_blank"><p> Powered by News API </p></Link>
             </div>
         </footer>
