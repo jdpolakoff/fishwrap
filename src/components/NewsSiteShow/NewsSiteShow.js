@@ -11,6 +11,8 @@ import ReactSiema from 'react-siema'
 import moment from 'moment'
 import 'moment-timezone'
 import '../Footer/Footer.css';
+import Logo from '../../logo.png'
+
 
 
 class NewsSiteShow extends Component {
@@ -56,6 +58,12 @@ class NewsSiteShow extends Component {
 render() {
   return(
     <div className="stuffContain">
+    <Link to ="/">
+    <div className="headlogo">
+    <h2> ←Back </h2>
+    <img className="logo" src={Logo} />
+    </div>
+    </Link>
     <main>
       <header>
         <h2>Top Headlines From {this.state.selectedSite.name}</h2>

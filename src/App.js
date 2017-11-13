@@ -985,13 +985,43 @@ class App extends Component {
       <div className="App">
           <main>
               <Switch>
+              <Route
+              path="/search/:query"
+              render={(props) => {
+                return (
+                  <div>
+                  <Link to ="/">
+                  <div className="headlogo">
+                  <h2> ←Back </h2>
+                  <img className="logo" src={Logo} />
+                  </div>
+                  </Link>
+                  <NewsCategories />
+                  <SearchResults {...props} />
+                  </div>
+                )
+              }}
+              />
+              <Route
+              path="/sources/:source"
+              render={(props) => {
+                return (
+                  <div>
+                  <NewsSiteShow
+                  {...props}
+                  allNews={this.state.allNewsSources}
+                  />
+                  </div>
+                )
+              }}
+              />
                     <Route
                       path="/news"
                       render={(props) => {
                         return (
                           <div className="content">
                             <header>
-                            <Link to="/news">
+                            <Link to="/">
                             <div className="headlogo">
                               <h1>Fishwrap</h1>
                               <img className="logo" src={Logo} />
@@ -1019,42 +1049,6 @@ class App extends Component {
                       }}
                       />
                       <Route
-                      path="/search/:query"
-                      render={(props) => {
-                        return (
-                          <div>
-                          <Link to ="/news">
-                          <div className="headlogo">
-                            <h2> ←Back </h2>
-                            <img className="logo" src={Logo} />
-                          </div>
-                          </Link>
-                          <NewsCategories />
-                          <SearchResults {...props} />
-                          </div>
-                        )
-                      }}
-                      />
-                      <Route
-                      path="/sources/:source"
-                      render={(props) => {
-                        return (
-                          <div>
-                          <Link to ="/news">
-                          <div className="headlogo">
-                            <h2> ←Back </h2>
-                            <img className="logo" src={Logo} />
-                          </div>
-                          </Link>
-                          <NewsSiteShow
-                          {...props}
-                          allNews={this.state.allNewsSources}
-                          />
-                          </div>
-                        )
-                      }}
-                      />
-                      <Route
                       path="/about"
                       render={() => {
                         return (
@@ -1069,7 +1063,7 @@ class App extends Component {
                       render={(props) => {
                         return (
                           <div>
-                          <Link to ="/news">
+                          <Link to ="/">
                           <div className="headlogo">
                             <h2> ←Back </h2>
                             <img className="logo" src={Logo} />
